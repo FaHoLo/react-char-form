@@ -10,8 +10,8 @@ function Form(props) {
 
   const handleChange = (event) => {
     const {name, value} = event.target
-    setState(() => ({
-      ...state, [name]: value,
+    setState((oldState) => ({
+      ...oldState, [name]: value,
     }))
   };
 
